@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace：必须与对应的接口全类名一致 id:必须与对应接口的某个对应的方法名一致 -->
+<!-- 实体类,简称 -设置别名 -->
+
+<mapper namespace="com.zngcloudcms.dao.IUserDao">
+
+	<insert id="createUser" parameterType="User">
+		insert into sys_user(uid,username,pwd) values(#{uID},#{userName},#{pwd});
+	</insert>
+
+	<select id="getUserByroleID" parameterType="int" resultType="User">
+		select * from sys_user where ID=#{ID}
+	</select>
+	
+<!-- 
+	<select id="getUserByUserName" parameterType="string" resultType="User" resultMap="User">
+		select * from sys_user where UserName=#{userName} limit 0,1
+	</select>
+	
+	<select id="getUserByUserCodeOrName" parameterType="string" resultType="User" resultMap="User">
+		select * from sys_user where UserName=#{loginData} or Code=#{loginData} limit 0,1
+	</select>	
+	
+	<update id="updateUserByID" parameterType="User">
+		update sys_user set Code=#{code},RoleID=#{roleID},UserName=#{userName},Sex=#{sex},Age=#{age},EMail=#{eMail},Status=#{status},LastUpdateTime=now() where ID=#{id}
+	</update> -->
+
+
+</mapper>  

@@ -1,0 +1,6 @@
+com\zngcloudcms\dao\mysql\IRoleDao.class
+com\zngcloudcms\dao\mongo\MongoGenDao.class
+com\zngcloudcms\dao\mysql\IUserDao.class
+com\zngcloudcms\dao\MultipleDataSourceAspectAdvice.class
+com\zngcloudcms\dao\MultipleDataSource.class
+com\zngcloudcms\dao\mysql\IUserRole.class

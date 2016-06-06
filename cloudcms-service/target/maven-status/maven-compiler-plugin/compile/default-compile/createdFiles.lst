@@ -1,0 +1,6 @@
+com\zngcloudcms\service\BaseService.class
+com\zngcloudcms\service\IRoleService.class
+com\zngcloudcms\service\impl\UserServiceImpl.class
+com\zngcloudcms\service\impl\RoleService.class
+com\zngcloudcms\service\IUserService.class
+com\zngcloudcms\service\LoadSysConfigParameters.class

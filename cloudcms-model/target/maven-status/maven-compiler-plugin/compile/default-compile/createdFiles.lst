@@ -1,0 +1,4 @@
+com\zngcloudcms\model\User.class
+com\zngcloudcms\model\UserRole.class
+com\zngcloudcms\model\Role.class
+com\zngcloudcms\model\RetInfo.class
